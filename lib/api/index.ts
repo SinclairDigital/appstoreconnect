@@ -114,6 +114,7 @@ function headers(
 ): OutgoingHttpHeaders {
     const defaultHeaders: OutgoingHttpHeaders = {
         'content-type': contentType,
+        accept: '*/*',
     }
     let headers = defaultHeaders
     if (token) {
